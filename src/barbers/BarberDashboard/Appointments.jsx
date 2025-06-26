@@ -14,7 +14,7 @@ export default function Appointments({
     <li className="bd-card">
       <div className="bd-card-left">
         <img
-          src={"/assets/clients/1.png"}
+          src={"/public/assets/clients/1.png"}
           alt={clientName}
           className="bd-avatar"
         />

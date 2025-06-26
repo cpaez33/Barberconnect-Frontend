@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 
 import { useAuth } from "../auth/AuthContext";
-import BarberConnectImage from "../../assets/BarberConnect-logo.png";
+import BarberConnectImage from "../../public/assets/BarberConnect-logo.png";
 import "../layout/layout.css";
 
 export default function Navbar() {

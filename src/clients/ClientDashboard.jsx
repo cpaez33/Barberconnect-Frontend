@@ -52,7 +52,7 @@ export default function ClientDashboard() {
                 {/* Avatar */}
                 <Link to={`/barbers/${appt.otheruser.id}`}>
                   <img
-                    src={`/assets/barbers/${appt.otheruser.id}.png`}
+                    src={`/public/assets/barbers/${appt.otheruser.id}.png`}
                     alt={appt.otheruser.name}
                     className="cd-avatar"
                   />

@@ -9,7 +9,7 @@ export default function BarbersList({ barbers, loadingBarbers, barbersErr }) {
   return (
     <div className="barber-grid">
       {barbers?.map((barber) => {
-        const imgUrl = `/assets/barbers/${barber.id}.png`;
+        const imgUrl = `/public/assets/barbers/${barber.id}.png`;
 
         return (
           <div key={barber.id} className="barber-card">
