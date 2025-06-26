@@ -2,7 +2,7 @@ import { useAuth } from "../../auth/AuthContext";
 import { Link } from "react-router";
 import "./barberdashboard.css";
 import useQuery from "../../api/useQuery";
-import Appointments from "./appointments";
+import Appointments from "./Appointments";
 
 export default function BarberDashboard() {
   const { user } = useAuth();
