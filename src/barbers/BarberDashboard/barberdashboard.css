@@ -1,0 +1,206 @@
+.bd-container {
+  padding: 1rem 2rem;
+  background-color: #fcf8f0;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.bd-center-box {
+  background-color: #fcf8f0;
+}
+
+.bd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bd-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #364153;
+  margin: 0;
+}
+
+.bd-header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.bd-button {
+  background-color: #364153;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 1000;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+.bd-button:hover {
+  background-color: #2a3543;
+}
+
+.bd-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #364153;
+  margin: 0 0 1.5rem;
+}
+
+.bd-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bd-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  width: 100%;
+}
+.bd-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bd-card-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.bd-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.bd-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.bd-service-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #364153;
+}
+
+.bd-date {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.bd-pill {
+  margin-left: 1rem;
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+  border-radius: 12px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.bd-status {
+  border-radius: 12px;
+  margin-left: 1rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+/* Haircut – blue */
+.bd-status--haircut {
+  background: #e7f3ff;
+  color: #1e88e5;
+}
+
+/* Scissor Cut – yellow */
+.bd-status--scissor-cut {
+  background: #fff8e1;
+  color: #ffca28;
+}
+
+/* Beard Trim – green */
+.bd-status--beard-trim {
+  background: #e8f5e9;
+  color: #43a047;
+}
+
+/* Shape-Up – purple */
+.bd-status--shape-up {
+  background: #f3e5f5;
+  color: #8e24aa;
+}
+
+.bd-status.booked {
+  color: #364153;
+}
+.bd-status.cancelled {
+  color: #e55353;
+}
+
+.bd-actions {
+  display: flex;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+.bd-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #364153;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+}
+
+.bd-action-a {
+  text-decoration: none;
+}
+
+.bd-action-a:visited {
+  color: black;
+}
+.bd-action-a:hover {
+  color: #e0a800;
+}
+
+.bd-action:hover {
+  color: #e0a800;
+}
+
+.bd-action-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .bd-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bd-card {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

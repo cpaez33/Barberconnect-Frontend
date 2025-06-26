@@ -1,0 +1,83 @@
+/* ---------- Navbar Container ---------- */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #364153;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ---------- Brand (logo + text) ---------- */
+#brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo {
+  width: 60px;
+  background-color: white;
+  border-radius: 50px;
+  height: auto;
+}
+.brand-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ---------- Main nav links ---------- */
+.main-nav {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+/* Base link style */
+.nav-item {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.25rem;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.nav-item.explore {
+  margin: 0 auto;
+}
+
+/* Active link underline */
+.nav-item.active {
+  border-bottom: 2px solid #ffc107;
+}
+
+/* Hover state */
+.nav-item:hover {
+  color: #ffc107;
+}
+
+/* ---------- Call-to-action button ---------- */
+.nav-cta {
+  display: inline-block;
+  text-decoration: none;
+  background: #ffc107;
+  color: #364153;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-cta:hover {
+  background: #e0a800;
+  color: #fff;
+}

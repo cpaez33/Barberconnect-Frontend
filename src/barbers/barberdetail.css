@@ -1,0 +1,191 @@
+.barber-detail-page {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fcf8f0;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+.sidebar-card {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.image-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.image-wrapper .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sidebar-card h2 {
+  text-align: center;
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+.barber-role {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-card hr {
+  border: none;
+  height: 1px;
+  background: #ece5dc;
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* Services */
+.services-title {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+.services-list {
+  list-style: none;
+}
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fcf8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.service-info {
+  display: flex;
+  flex-direction: column;
+}
+.service-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.service-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Booking */
+.booking-section {
+  flex: 1;
+}
+.booking-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.booking-title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Form groups */
+.booking-form-group {
+  margin-bottom: 1.5rem;
+}
+.booking-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+.booking-form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ece5dc;
+  border-radius: 0.5rem;
+  background: #fcf8f0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Calendly container */
+.calendar-container {
+  border: 1px solid #ece5dc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  min-height: 400px;
+  position: relative;
+}
+
+.calendar-fallback {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: #ffc107;
+  text-decoration: none;
+}
+.calendar-fallback:hover {
+  text-decoration: underline;
+}
+
+/* Summary */
+.summary {
+  margin-top: 2rem;
+}
+.summary h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.summary-total {
+  border-top: 1px solid #ece5dc;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+/* Book button */
+.btn-book {
+  margin-top: 3rem;
+  background: #ffc107;
+  color: #364153;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  float: right;
+}
+.btn-book:hover {
+  background: #e0a800;
+}
+
+@media (max-width: 640px) {
+  .barber-detail-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar-card {
+    min-width: 88%;
+  }
+}
