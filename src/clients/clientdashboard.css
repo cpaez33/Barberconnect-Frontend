@@ -12,7 +12,7 @@
   margin: 0 auto;
   margin-bottom: 5rem;
   border-radius: 0.75rem;
-  background: url("../public/assets/background.png") center/cover no-repeat;
+  background: url("../assets/background.png") center/cover no-repeat;
 }
 
 .cd-hero h1 {

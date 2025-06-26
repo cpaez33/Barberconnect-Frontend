@@ -24,7 +24,7 @@ export default function BarberDetail() {
         <div className="image-wrapper">
           <img
             className="image"
-            src={`/public/assets/profile${barber.id}.png`}
+            src={`assets/profile${barber.id}.png`}
             alt={barber.name}
           />
         </div>
